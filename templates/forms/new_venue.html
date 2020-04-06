@@ -34,8 +34,8 @@
       </div>
       <div class="form-group">
         <label for="seeking_venue">Seeking Talent? </label>
-          {{ form.seeking_talent(id='seaking_checkbox', style='margin:auto;margin-right:5px')}}
-          {{ form.seeking_description(id='seaking_descp_input', style='display:none', class_ = 'form-control', placeholder='Looking for shows ...', autofocus = true) }}
+          {{ form.seeking_talent(style='margin:auto;margin-right:5px')}}
+          {{ form.seeking_description(class_ = 'form-control', placeholder='Looking for shows ...', autofocus = true) }}
       </div>
       <div class="form-group">
           <label for="website">Website</label>
@@ -48,7 +48,7 @@
       <div class="form-group">
           <label for="genres">Facebook Link</label>
           {{ form.facebook_link(class_ = 'form-control', placeholder='http://', id=form.state, autofocus = true) }}
-        </div>
+      </div>
       <input type="submit" value="Create Venue" class="btn btn-primary btn-lg btn-block">
     </form>
   </div>
